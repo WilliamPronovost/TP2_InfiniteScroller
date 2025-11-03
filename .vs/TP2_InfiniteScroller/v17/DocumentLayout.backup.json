@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\TP2_InfiniteScroller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|d:\\tp2_infinitescroller\\assets\\scripts\\keyboardandbuttons1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keyboardandbuttons1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\tp2_infinitescroller\\assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,27 +35,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KeyboardAndButtons1.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons1.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\KeyboardAndButtons1.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons1.cs",
-              "RelativeToolTip": "Assets\\Scripts\\KeyboardAndButtons1.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwCwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T19:51:40.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "KeyboardAndButtons.cs",
               "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\KeyboardAndButtons.cs",
               "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
               "RelativeToolTip": "Assets\\Scripts\\KeyboardAndButtons.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowCsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T19:48:44.873Z"
+              "WhenOpened": "2025-10-29T19:48:44.873Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
