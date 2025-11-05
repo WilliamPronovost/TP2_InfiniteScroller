@@ -11,11 +11,13 @@ public class PlayerControls : MonoBehaviour
     private InputAction m_jumpAction;
 
     [SerializeField] private float m_playerSpeed;
+    [SerializeField] private float m_speedMultiplier;
     private float m_elapsed;
     private float m_delay = 5.0f;
 
     [SerializeField] private float m_playerJumpForce;
-	private bool m_isOnGround = true;
+    [SerializeField] private float m_playerDoubleJumpForce;
+    private bool m_isOnGround = true;
 
     [SerializeField] private Sprite m_playerRunSprite;
     [SerializeField] private Sprite m_playerJumpSprite;
@@ -24,10 +26,9 @@ public class PlayerControls : MonoBehaviour
 
     [SerializeField] private AudioSource m_soundsSource;
     [SerializeField] private AudioClip m_jumpSFX;
-	[SerializeField] private AudioClip m_deathSFX;
-	[SerializeField] private AudioClip m_gameSoundtrackSFX;
 
-	private int m_highScore = 0;
+    private int m_jumpCount = 0;
+    private int m_highScore = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -37,9 +38,6 @@ public class PlayerControls : MonoBehaviour
 
         m_moveAction = m_inputFile.FindAction("Move");
         m_jumpAction = m_inputFile.FindAction("Jump");
-
-		m_soundsSource.clip = m_gameSoundtrackSFX;
-		m_soundsSource.Play();
 	}
 
     // Update is called once per frame
@@ -47,15 +45,22 @@ public class PlayerControls : MonoBehaviour
     {
 		Running();
         bool spaceKeyPressed = m_jumpAction.WasPressedThisFrame();
-        if (spaceKeyPressed && m_isOnGround)
+        if (spaceKeyPressed && m_isOnGround && m_jumpCount == 0)
         {
             Jumping();
             m_isOnGround = false;
+            m_jumpCount += 1;
+            if(spaceKeyPressed && !m_isOnGround && m_jumpCount == 1)
+            {
+                DoubleJumping();
+                m_jumpCount -= 1;
+            }
         }
+
         m_elapsed += Time.deltaTime;
         if (m_elapsed >= m_delay)
         {
-            m_playerSpeed *= 1.3f;
+            m_playerSpeed *= m_speedMultiplier;
             m_elapsed = 0.0f;
         }
     }
@@ -77,7 +82,8 @@ public class PlayerControls : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		m_isOnGround = true;
+        m_isOnGround = true;
+        m_jumpCount = 0;
 	}
     private void Jumping()
     {
@@ -86,14 +92,19 @@ public class PlayerControls : MonoBehaviour
 		m_playerRigidbody.AddForce(Vector3.up * m_playerJumpForce, ForceMode2D.Impulse);
         m_playerAnimator.SetBool("IsJumping", true);
     }
+    private void DoubleJumping()
+    {
+        m_soundsSource.clip = m_jumpSFX;
+        m_soundsSource.Play();
+        m_playerRigidbody.AddForce(Vector3.up * m_playerDoubleJumpForce, ForceMode2D.Impulse);
+        m_playerAnimator.SetBool("IsJumping", true);
+    }
     public void CollectCoin()
     {
         m_highScore+= 100;
 	}
     public void HitObstacle()
     {
-        m_soundsSource.clip = m_deathSFX;
-        m_soundsSource.Play();
         SceneManager.LoadScene("GameOver");
 	}
 }
