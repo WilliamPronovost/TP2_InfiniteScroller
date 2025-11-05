@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\TP2_InfiniteScroller\\",
+  "WorkspaceRootPath": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|d:\\william pronovost_2430066\\tp2_infinitescroller\\assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\gamecoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\playerdeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\assets\\scripts\\playerdeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerdeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\TP2_InfiniteScroller\\assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\assets\\scripts\\objectgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keyboardandbuttons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\assets\\scripts\\gamecoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{587A21FA-53B8-2BE6-5A30-298DB78F9EC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecoins.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,28 +34,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "KeyboardAndButtons.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\KeyboardAndButtons.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
-              "RelativeToolTip": "Assets\\Scripts\\KeyboardAndButtons.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T19:48:44.873Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "ObjectGenerator.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\ObjectGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectGenerator.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\ObjectGenerator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectGenerator.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwB8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:39:30.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KeyboardAndButtons.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\KeyboardAndButtons.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\KeyboardAndButtons.cs",
+              "RelativeToolTip": "Assets\\Scripts\\KeyboardAndButtons.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T19:48:44.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameCoins.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\GameCoins.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\GameCoins.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameCoins.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\GameCoins.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\GameCoins.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameCoins.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -59,39 +78,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PlayerDeath.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerDeath.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerDeath.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerDeath.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerDeath.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerDeath.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerDeath.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T17:57:38.428Z"
+              "WhenOpened": "2025-10-29T17:57:38.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CameraFollow.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\CameraFollow.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollow.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\CameraFollow.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\CameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\CameraFollow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T17:48:58.114Z"
+              "WhenOpened": "2025-10-29T17:48:58.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "PlayerControls.cs",
-              "DocumentMoniker": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerControls.cs",
+              "DocumentMoniker": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerControls.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerControls.cs",
-              "ToolTip": "D:\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerControls.cs",
+              "ToolTip": "D:\\William Pronovost_2430066\\TP2_InfiniteScroller\\Assets\\Scripts\\PlayerControls.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerControls.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBoAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAA9wCkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T17:34:20.83Z"
+              "WhenOpened": "2025-10-29T17:34:20.83Z",
+              "EditorCaption": ""
             }
           ]
         }
