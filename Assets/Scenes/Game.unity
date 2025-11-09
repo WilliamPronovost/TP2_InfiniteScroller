@@ -541,7 +541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_player: {fileID: 1576460573}
-  m_offset: {x: -8, y: -4, z: 10}
+  m_offset: {x: -9, y: -4, z: 10}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,16 +1182,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f12e5ddb58ac14e833a1fce286864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_platformPrefab: {fileID: 1746364838017178530, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
+  m_greenPlatformPrefab: {fileID: 1746364838017178530, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
+  m_yellowPlatformPrefab: {fileID: 6036739617764784958, guid: 74e60388613d16b4fac04d8115f69d27, type: 3}
+  m_whitePlatformPrefab: {fileID: 235508196998285530, guid: b6afc6597364fba43b4cffd06d19b520, type: 3}
   m_coinPrefab: {fileID: 2239499396751049868, guid: 47db62807e742b24288fd6ddf21328e6, type: 3}
   m_sawPrefab: {fileID: 2766198509240179911, guid: 5169f423d4ef8f24cb9b1b89e463f332, type: 3}
   m_player: {fileID: 1576460573}
   m_spawner: {fileID: 1302682079}
   m_startingPlatform: {fileID: 1678504254543965767, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
-  m_distanceForPlatformSpawn: 20
+  m_platformTypeSpawnChance: 0.33
+  m_distanceForPlatformSpawn: 50
   m_intervalX: 12
-  m_platformTypeSpawnChance: 0
+  m_platformLength: 15
+  m_playerRange: 6
   m_maxPlatformCount: 15
+  m_maxCoinCount: 10
 --- !u!1 &1498311228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1394,8 +1399,6 @@ MonoBehaviour:
   m_playerAnimator: {fileID: 1576460568}
   m_soundsSource: {fileID: 1576460574}
   m_jumpSFX: {fileID: 8300000, guid: d8b472c1229931c468e2559211de9f1d, type: 3}
-  m_deathSFX: {fileID: 8300000, guid: 297e3a3ed5d74294ab067678996b665f, type: 3}
-  m_gameSoundtrackSFX: {fileID: 8300000, guid: 3e49657719bdb534080cd75e14399ca5, type: 3}
 --- !u!50 &1576460570
 Rigidbody2D:
   serializedVersion: 5
@@ -1650,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7861359972187568397, guid: 77b5ab3c8f99e1240bbb07fd6135f4ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.01
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 7861359972187568397, guid: 77b5ab3c8f99e1240bbb07fd6135f4ed, type: 3}
       propertyPath: m_LocalPosition.y
