@@ -1182,6 +1182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f12e5ddb58ac14e833a1fce286864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_platformTypes: []
   m_greenPlatformPrefab: {fileID: 1746364838017178530, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
   m_yellowPlatformPrefab: {fileID: 6036739617764784958, guid: 74e60388613d16b4fac04d8115f69d27, type: 3}
   m_whitePlatformPrefab: {fileID: 235508196998285530, guid: b6afc6597364fba43b4cffd06d19b520, type: 3}
@@ -1196,7 +1197,9 @@ MonoBehaviour:
   m_platformLength: 15
   m_playerRange: 6
   m_maxPlatformCount: 15
-  m_maxCoinCount: 10
+  m_currentPlatformCount: 0
+  m_maxCoinCount: 50
+  m_maxSawCount: 10
 --- !u!1 &1498311228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,8 +1395,7 @@ MonoBehaviour:
   m_inputFile: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_playerSpeed: 4
   m_speedMultiplier: 1.05
-  m_playerJumpForce: 6
-  m_playerDoubleJumpForce: 4
+  m_playerJumpForce: 9
   m_playerRunSprite: {fileID: 21300000, guid: a407a3b3fefdc4b4595de46072f1ba58, type: 3}
   m_playerJumpSprite: {fileID: 21300000, guid: f98aa3d998533f2479a54460b4d5a2d0, type: 3}
   m_playerAnimator: {fileID: 1576460568}
@@ -1536,7 +1538,7 @@ Transform:
   m_GameObject: {fileID: 1576460566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.95, z: 6.98844}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
