@@ -4,34 +4,33 @@ using UnityEngine;
 
 public class ObjectGenerator : MonoBehaviour
 {
+	//[SerializeField] private PlayerControls m_player;
+
+    [SerializeField] private GameObject[] m_platformTypes;
+
     [SerializeField] private GameObject m_sawPrefab;
     [SerializeField] private float m_sawHeight;
-    private List<Transform> m_sawCache;
-    [SerializeField] private int m_maxSawCount;
 
     [SerializeField] private GameObject m_coinPrefab;
 
-    [SerializeField] private GameObject[] m_platformTypes;
     private int m_platformArrayIndex;
     private bool m_isPlatformDestroyed;
-
-	//[SerializeField] private PlayerControls m_player;
 	[SerializeField] private Transform m_playerPosition;
 	[SerializeField] private Transform m_spawner;
     [SerializeField] private Transform m_startingPlatform;
-
 
     [SerializeField] private float m_distanceForPlatformSpawn;
     [SerializeField] private float m_intervalX;
     [SerializeField] private float m_platformLength;
     [SerializeField] private float m_playerRange;
-    [SerializeField] private float m_platformTypeSpawnChance;
-  
+
+    [SerializeField] private int m_maxPlatformCount;
+	[SerializeField] private int m_maxCoinCount;
+    [SerializeField] private int m_maxSawCount;
 
 	private List<Transform> m_platformCache;
 	private List<Transform> m_coinCache;
-    [SerializeField] private int m_maxPlatformCount;
-	[SerializeField] private int m_maxCoinCount;
+    private List<Transform> m_sawCache;
 
     private Transform m_lastCreatedPlatform;
 
@@ -51,9 +50,9 @@ public class ObjectGenerator : MonoBehaviour
         //if (!m_player.IsStarted)
         //    return;
 
+        int platformArrayIndex = Random.Range(0, m_platformTypes.Length);
         if (Vector3.Distance(m_playerPosition.position, m_lastCreatedPlatform.position) < m_distanceForPlatformSpawn)
         {
-            int platformArrayIndex = Random.Range(0, m_platformTypes.Length);
             Transform platformEndPoint = m_lastCreatedPlatform.Find("End");
             Vector3 spawnDistance = new Vector3(m_intervalX, 0, 0);
             // Vector3 platformSpawnDistance = platformEndPoint.position + spawnDistance;
@@ -73,7 +72,7 @@ public class ObjectGenerator : MonoBehaviour
                 spawnDistance = Vector3.zero;
             }
 
-            m_lastCreatedPlatform = SpawnPosition(platformEndPoint.position + spawnDistance, coinSpawnDistance, sawSpawnDistance, m_platformTypes[m_platformArrayIndex]);
+            m_lastCreatedPlatform = SpawnPosition(platformEndPoint.position + spawnDistance, coinSpawnDistance, sawSpawnDistance, m_platformTypes, platformArrayIndex);
             m_platformCache.Add(m_lastCreatedPlatform);
             m_coinCache.Add(platformEndPoint);
             if (m_platformCache.Count > m_maxPlatformCount)
@@ -96,12 +95,11 @@ public class ObjectGenerator : MonoBehaviour
             }
         }
     }
-    private Transform SpawnPosition(Vector3 spawnPosition, Vector3 coinPosition, Vector3 sawPosition, GameObject platformPrefabs)
+    private Transform SpawnPosition(Vector3 spawnPosition, Vector3 coinPosition, Vector3 sawPosition, GameObject[] platformPrefabs, int prefabs)
     {
-        int platformArrayIndex = Random.Range(0, m_platformTypes.Length);
         GameObject newCoin = Instantiate(m_coinPrefab, coinPosition, Quaternion.identity);
         GameObject newSaw = Instantiate(m_sawPrefab, sawPosition, Quaternion.identity);
-        GameObject newPlatform = Instantiate(platformPrefabs, spawnPosition, Quaternion.identity);
+        GameObject newPlatform = Instantiate(platformPrefabs[prefabs], spawnPosition, Quaternion.identity);
         return newPlatform.transform;
     }
 }

@@ -1614,30 +1614,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f12e5ddb58ac14e833a1fce286864e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sawPrefab: {fileID: 2766198509240179911, guid: 5169f423d4ef8f24cb9b1b89e463f332, type: 3}
-  m_sawHeight: 1.5
-  m_sawCache: []
-  m_maxSawCount: 15
-  m_coinPrefab: {fileID: 2239499396751049868, guid: 47db62807e742b24288fd6ddf21328e6, type: 3}
-  m_platformTypes:
-  - {fileID: 1746364838017178530, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
-  - {fileID: 235508196998285530, guid: b6afc6597364fba43b4cffd06d19b520, type: 3}
-  - {fileID: 6036739617764784958, guid: 74e60388613d16b4fac04d8115f69d27, type: 3}
-  m_platformArrayIndex: 0
-  m_platformPrefab: {fileID: 0}
-  m_isPlatformDestroyed: 0
-  m_playerPosition: {fileID: 1576460573}
-  m_spawner: {fileID: 1302682079}
-  m_startingPlatform: {fileID: 1678504254543965767, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
-  m_distanceForPlatformSpawn: 50
-  m_intervalX: 12
-  m_platformLength: 15
-  m_playerRange: 6
-  m_platformCache: []
-  m_coinCache: []
-  m_maxPlatformCount: 15
-  m_maxCoinCount: 50
-  m_lastCreatedPlatform: {fileID: 0}
 --- !u!114 &1302682081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1650,14 +1626,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7bc618cd90d5ae46a392161fd0ac812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_sawPrefab: {fileID: 2766198509240179911, guid: 5169f423d4ef8f24cb9b1b89e463f332, type: 3}
-  m_sawHeight: 1.5
-  m_maxSawCount: 10
-  m_coinPrefab: {fileID: 2239499396751049868, guid: 47db62807e742b24288fd6ddf21328e6, type: 3}
   m_platformTypes:
   - {fileID: 1746364838017178530, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
   - {fileID: 235508196998285530, guid: b6afc6597364fba43b4cffd06d19b520, type: 3}
   - {fileID: 6036739617764784958, guid: 74e60388613d16b4fac04d8115f69d27, type: 3}
+  m_sawPrefab: {fileID: 2766198509240179911, guid: 5169f423d4ef8f24cb9b1b89e463f332, type: 3}
+  m_sawHeight: 1.5
+  m_coinPrefab: {fileID: 2239499396751049868, guid: 47db62807e742b24288fd6ddf21328e6, type: 3}
   m_playerPosition: {fileID: 1576460573}
   m_spawner: {fileID: 1302682079}
   m_startingPlatform: {fileID: 1678504254543965767, guid: beed5e916d2f3d844805afdc618d4107, type: 3}
@@ -1665,9 +1640,9 @@ MonoBehaviour:
   m_intervalX: 12
   m_platformLength: 15
   m_playerRange: 6
-  m_platformTypeSpawnChance: 0.33
   m_maxPlatformCount: 5
   m_maxCoinCount: 50
+  m_maxSawCount: 5
 --- !u!1 &1498311228
 GameObject:
   m_ObjectHideFlags: 0
