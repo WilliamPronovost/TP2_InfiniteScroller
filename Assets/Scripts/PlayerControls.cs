@@ -45,7 +45,7 @@ public class PlayerControls : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+     {
         // TODO: Wait for player to press key to start
         Running();
         Jumping();
