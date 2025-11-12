@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class KeyboardAndButtons1 : MonoBehaviour
+public class KeyboardAndButtons : MonoBehaviour
 {
 	[SerializeField] private InputActionAsset m_inputFile;
 	private InputAction m_goingToMenuAction;

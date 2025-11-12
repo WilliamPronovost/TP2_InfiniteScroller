@@ -12,8 +12,9 @@ public class ObjectGenerator : MonoBehaviour
 	[SerializeField] private GameObject m_coinPrefab;
 	[SerializeField] private GameObject m_sawPrefab;
 
-	[SerializeField] private Transform m_player;
-    [SerializeField] private Transform m_spawner;
+	//[SerializeField] private PlayerControls m_player;
+	[SerializeField] private Transform m_playerPosition;
+	[SerializeField] private Transform m_spawner;
     [SerializeField] private Transform m_startingPlatform;
 
 
@@ -45,7 +46,10 @@ public class ObjectGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(m_player.position, m_lastCreatedPlatform.position) < m_distanceForPlatformSpawn)
+        //if (!m_player.IsStarted)
+        //    return;
+
+        if (Vector3.Distance(m_playerPosition.position, m_lastCreatedPlatform.position) < m_distanceForPlatformSpawn)
         {
             Vector3 spawnDistance = new Vector3(m_intervalX, 0, 0);
 
@@ -59,7 +63,7 @@ public class ObjectGenerator : MonoBehaviour
             float sawRangeY = m_greenPlatformPrefab.transform.position.y + 1.5f;
             Vector3 sawSpawningRange = new Vector3(sawRangeX, sawRangeY, 0);
             Vector3 sawSpawnDistance = platformEndPoint.position + sawSpawningRange + spawnDistance;
-            if (m_player.position.x == m_spawner.position.x)
+            if (m_playerPosition.position.x == m_spawner.position.x)
             {
                 spawnDistance = Vector3.zero;
             }

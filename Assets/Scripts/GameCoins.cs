@@ -6,8 +6,8 @@ public class GameCoins : MonoBehaviour {
 		PlayerControls player = collision.GetComponent<PlayerControls>();
 		if (player != null)
 		{
-			Destroy(gameObject);
 			player.CollectCoin();
+			Destroy(gameObject);
 		}
 	}
 }
