@@ -61,6 +61,8 @@ public class PlayerControls : MonoBehaviour
             UI_Manager.UpdateScore(10);
             m_timer = 0;
         }
+        m_playerAnimator.SetBool("IsGrounded", m_isOnGround);
+        m_playerAnimator.SetFloat("Y_Velocity", m_playerRigidbody.linearVelocity.y);
     }
 
     private void Running()
@@ -68,14 +70,6 @@ public class PlayerControls : MonoBehaviour
         Vector3 calculatedVeclocity = m_playerRigidbody.linearVelocity;
         calculatedVeclocity.x = m_playerSpeed;
         m_playerRigidbody.linearVelocity = calculatedVeclocity;
-        if (calculatedVeclocity.magnitude > 0)
-        {
-            m_playerAnimator.SetBool("IsRunning", true);
-        }
-        else
-        {
-            m_playerAnimator.SetBool("IsRunning", false);
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -92,14 +86,12 @@ public class PlayerControls : MonoBehaviour
         if (m_isOnGround && m_canJump && m_spaceKeyPressed)
         {
             Jump();
-            // m_playerAnimator.SetBool("IsJumping", true);
             m_isOnGround = false;
 
         }
         else if (m_isOnGround == false && m_canJump && m_spaceKeyPressed)
         {
             Jump();
-            // m_playerAnimator.SetBool("IsJumping", true);
             m_canJump = false;
         }
     }
@@ -107,6 +99,9 @@ public class PlayerControls : MonoBehaviour
     {
 		m_soundsSource.clip = m_jumpSFX;
 		m_soundsSource.Play();
+		Vector3 calculatedVeclocity = m_playerRigidbody.linearVelocity;
+		calculatedVeclocity.y = 0;
+		m_playerRigidbody.linearVelocity = calculatedVeclocity;
 		m_playerRigidbody.AddForce(Vector2.up * m_playerJumpForce, ForceMode2D.Impulse);
 	}
     public void CollectCoin()

@@ -14,7 +14,6 @@ public class ObjectGenerator : MonoBehaviour
     [SerializeField] private GameObject m_coinPrefab;
 
     private int m_platformArrayIndex;
-    private bool m_isPlatformDestroyed;
 	[SerializeField] private Transform m_playerPosition;
 	[SerializeField] private Transform m_spawner;
     [SerializeField] private Transform m_startingPlatform;
@@ -41,7 +40,6 @@ public class ObjectGenerator : MonoBehaviour
         m_platformCache = new List<Transform>();
         m_coinCache = new List<Transform>();
         m_lastCreatedPlatform = m_startingPlatform;
-        m_isPlatformDestroyed = false;
     }
 
     // Update is called once per frame
@@ -72,7 +70,7 @@ public class ObjectGenerator : MonoBehaviour
                 spawnDistance = Vector3.zero;
             }
 
-            m_lastCreatedPlatform = SpawnPosition(platformEndPoint.position + spawnDistance, coinSpawnDistance, sawSpawnDistance, m_platformTypes, platformArrayIndex);
+            m_lastCreatedPlatform = PlatformSpawnPosition(platformEndPoint.position + spawnDistance, coinSpawnDistance, sawSpawnDistance, m_platformTypes, platformArrayIndex);
             m_platformCache.Add(m_lastCreatedPlatform);
             m_coinCache.Add(platformEndPoint);
             if (m_platformCache.Count > m_maxPlatformCount)
@@ -95,7 +93,7 @@ public class ObjectGenerator : MonoBehaviour
             }
         }
     }
-    private Transform SpawnPosition(Vector3 spawnPosition, Vector3 coinPosition, Vector3 sawPosition, GameObject[] platformPrefabs, int prefabs)
+    private Transform PlatformSpawnPosition(Vector3 spawnPosition, Vector3 coinPosition, Vector3 sawPosition, GameObject[] platformPrefabs, int prefabs)
     {
         GameObject newCoin = Instantiate(m_coinPrefab, coinPosition, Quaternion.identity);
         GameObject newSaw = Instantiate(m_sawPrefab, sawPosition, Quaternion.identity);
