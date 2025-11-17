@@ -151,3 +151,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sawSpeed: 3
+  m_sawDirection: -1

@@ -46,31 +46,32 @@ public class ObjectGenerator : MonoBehaviour
     void Update()
     {
         //if (!m_player.IsStarted)
-        //    return;
+            //return;
 
         int platformArrayIndex = Random.Range(0, m_platformTypes.Length);
         if (Vector3.Distance(m_playerPosition.position, m_lastCreatedPlatform.position) < m_distanceForPlatformSpawn)
         {
             Transform platformEndPoint = m_lastCreatedPlatform.Find("End");
-            Vector3 spawnDistance = new Vector3(m_intervalX, 0, 0);
-            // Vector3 platformSpawnDistance = platformEndPoint.position + spawnDistance;
+            Vector3 platformSpawnDistance = new Vector3(m_intervalX, 0, 0);
 
             float coinRangeX = Random.Range(m_platformTypes[m_platformArrayIndex].transform.position.x - m_platformLength, m_platformTypes[m_platformArrayIndex].transform.position.x + m_platformLength);
             float coinRangeY = Random.Range(m_platformTypes[m_platformArrayIndex].transform.position.y + 1, m_platformTypes[m_platformArrayIndex].transform.position.y + m_playerRange);
             Vector3 coinSpawningRange = new Vector3(coinRangeX, coinRangeY, 0);
-            Vector3 coinSpawnDistance = platformEndPoint.position + coinSpawningRange + spawnDistance;
+            Vector3 coinSpawnDistance = new Vector3(m_intervalX, 0, 0);
+            Vector3 coinFinalVector = platformEndPoint.position + coinSpawningRange + platformSpawnDistance;
 
             float sawRangeX = Random.Range(m_platformTypes[m_platformArrayIndex].transform.position.x - m_platformLength, m_platformTypes[m_platformArrayIndex].transform.position.x + m_platformLength);
             float sawRangeY = m_platformTypes[m_platformArrayIndex].transform.position.y + m_sawHeight;
             Vector3 sawSpawningRange = new Vector3(sawRangeX, sawRangeY, 0);
-            Vector3 sawSpawnDistance = platformEndPoint.position + sawSpawningRange + spawnDistance;
+            Vector3 sawSpawnDistance = new Vector3 (m_intervalX, 0, 0);
+            Vector3 sawFinalVector = platformEndPoint.position + sawSpawningRange + sawSpawnDistance;
 
             if (m_playerPosition.position.x == m_spawner.position.x)
             {
-                spawnDistance = Vector3.zero;
+                platformSpawnDistance = Vector3.zero;
             }
 
-            m_lastCreatedPlatform = PlatformSpawnPosition(platformEndPoint.position + spawnDistance, coinSpawnDistance, sawSpawnDistance, m_platformTypes, platformArrayIndex);
+            m_lastCreatedPlatform = PlatformSpawnPosition(platformEndPoint.position + platformSpawnDistance, coinFinalVector, sawFinalVector, m_platformTypes, platformArrayIndex);
             m_platformCache.Add(m_lastCreatedPlatform);
             m_coinCache.Add(platformEndPoint);
             if (m_platformCache.Count > m_maxPlatformCount)

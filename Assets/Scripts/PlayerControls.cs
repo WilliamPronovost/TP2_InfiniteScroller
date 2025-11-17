@@ -22,13 +22,11 @@ public class PlayerControls : MonoBehaviour
     private bool m_isStarted = false;
     public bool IsStarted => m_isStarted;
 
-    [SerializeField] private Sprite m_playerRunSprite;
-    [SerializeField] private Sprite m_playerJumpSprite;
-
     [SerializeField] private Animator m_playerAnimator;
 
     [SerializeField] private AudioSource m_soundsSource;
     [SerializeField] private AudioClip m_jumpSFX;
+    [SerializeField] private AudioClip m_deathSFX;
     private bool m_spaceKeyPressed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -110,6 +108,8 @@ public class PlayerControls : MonoBehaviour
     }
     public void HitObstacle()
     {
+        m_soundsSource.clip = m_deathSFX;
+        m_soundsSource.Play();
         UI_Manager.Save();
         SceneManager.LoadScene("GameOver");
     }
